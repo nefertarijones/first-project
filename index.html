@@ -2,48 +2,73 @@
 <html>
 
 <head>
-  <title>Tari's Wold</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tari's World</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 
-<div class  = "heading"> 
-<h1> Welcome to Starfigher!  </h1>
-<h3> Choose your champion...</h3>
+<div class="heading">
+    <h1 class = "welcome"> Welcome to Starfighter! </h1>
+    <h3> Choose your champion...</h3>
 </div>
 
-<div class = "bio"> 
-    <h3> Player Background </h3>
-    <ul> 
-        <li> My name is Nefertari Jones aka "Tari" </li>
-        <li> I grew up on Long Island, New York</li>
-        <li> I go to New York University! </li>
-    </ul>
+<div class="slideshow-container">
+
+
+
+    <div class="mySlides fade">
+        <h3 class = "text"> Player Background </h3>
+        <div class="numbertext">1 / 4</div>
+
+        <ul>
+            <li> My name is Nefertari Jones aka "Tari"</li>
+            <li> I grew up on Long Island, New York</li>
+            <li> I go to New York University!</li>
+        </ul>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <h3 class = "text"> Player Photo </h3>
+        <img src="tari-photo.jpeg" alt="my photo">
+    </div>
+
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <h3 class = "text"> Player Class: Coding Warrior </h3>
+        <p class = "text"> I started my KWK journey as a web-dev scholar and the next summer I came back for the mobile development
+            course. I loved KWK so much that I came back for two summers as a web dev IA. Since then, I have been
+            strengthening my coding superpowers
+            as a Computer Science and Cinema Studies major. </p>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+
+        <h3 class = "text"> Special Interest: Movies! </h3>
+        <p class = "text"> Hint! Click the photo to see one of Tari's favorite movies. </p>
+        <a href="https://www.proximitymedia.com/films/sinners"> <img src="sinners-photo.jpeg"
+                                                                     alt="Michael B Jordan"></a>
+
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
 
-<div class = "image"> 
-    <h3> Player Photo </h3>
-    <img src = "tari-photo.jpeg" > 
-</div>
-
-
-<div class = "class"> 
-    <h3> Player Class: Coding Warrior </h3>
-    <p> I started my KWK journey as a web-dev scholar and the next summer I came back for the mobile development course. I loved KWK so much that I came back for two summers as a web dev IA. Since then I have been strengthening my coding super powers 
-        as a Computer Science and Cinema Studies major. </p>
-</div>
-
-<div class = "special-interest"> 
-    <h3> Special Interest: Movies! </h3>
-    <p> Hint! Click the photo to see one of Tari's favorite movies. </p>
-    <a href = "https://www.proximitymedia.com/films/sinners"> <img src = "sinners-photo.jpeg" alt = "Michael B Jordan" ></a>
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
 
 </div>
-
 </body>
-
-
 
 
 </html>
