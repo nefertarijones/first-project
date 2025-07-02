@@ -16,16 +16,55 @@ h1{
     font-style: normal;
 }
 
+l1{
+    color: lightblue;
+}
+h3{
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+            "slnt" 0,
+            "CRSV" 0.5,
+            "ELSH" 0,
+            "ELXP" 0;
+}
+
 .subtitle{
     text-align:center;
+    color: lightblue;
 }
+
 * {
     background-color: aliceblue;
     box-sizing:border-box;
-
 }
 
-/* Slideshow container */
+.home-screen {
+    text-align: center;
+    padding: 50px;
+}
+
+.home-screen.hidden {
+    display: none;
+}
+
+.enter-btn {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.enter-btn:hover {
+    background-color: darkred;
+}
+
 .slideshow-container {
     max-width: 500px;
     height: 600px;
@@ -34,19 +73,19 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
-/* Hide the images by default */
+.slideshow-container.hidden {
+    display: none;
+}
+
 .mySlides {
     margin:auto;
-    display: none;
+    display:none;
     text-align: center;
     height: 100%;
     overflow-y: auto;
-
 }
-
 
 img {
     height: 500px;
@@ -57,20 +96,28 @@ img {
     margin: 0 auto;
 }
 
+.power{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
 
-/* Caption text */
 .text {
-    color: black;
+    color: gray;
+    font-size:20px;
     text-align:center;
-    font-size: 15px;
     padding: 8px 12px;
     position: sticky;
     bottom: 8px;
     width: 100%;
 }
 
+ul {
+    text-align: left;
+    display: inline-block;
+    color: black;
+}
 
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     position:relative;
@@ -87,7 +134,15 @@ img {
     background-color: darkred !important;
 }
 
-/* Fading animation */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dots-container.hidden {
+    display: none;
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -97,4 +152,5 @@ img {
     from {opacity: .4}
     to {opacity: 1}
 }
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://ani.cursors-4u.net/nature/nat-11/nat1058.cur), auto !important;} /* End https://www.cursors-4u.com */
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/toons/too-8/too735.cur), auto !important;} /* End https://www.cursors-4u.com */

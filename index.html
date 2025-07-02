@@ -5,69 +5,56 @@
     <title>Tari's World</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 </head>
 <body>
-
 <script src="js.js"></script>
+<h1 class="welcome">Welcome to Tari's World!</h1>
 
-<div class="heading">
-    <h1 class = "welcome"> Welcome to Starfighter! </h1>
+<div class="home-screen" id="homeScreen">
+    <div class="heading">
+        <h3> Learn about your coding champion!</h3>
+    </div>
+    <img class="power" src="powerpuff.png" alt="PowerPuff Girls">
+    <button class="enter-btn" onclick="enterSlideshow()">ENTER</button>
+</div>
 
-    <h3 class = "subtitle"> Choose your champion...</h3>
-
-<div class="slideshow-container">
-
-
-
+<div class="slideshow-container hidden" id="slideshowContainer">
     <div class="mySlides fade">
-        <h3 class = "text"> Player Background </h3>
-        <img src = "sinners-photo.jpeg" alt="placeholder">
-
-        <ul>
-            <li> My name is Nefertari Jones aka "Tari"</li>
-            <li> I grew up on Long Island, New York</li>
-            <li> I go to New York University!</li>
+        <h3 class="text">Player Background</h3>
+        <img src="tari-photo.jpeg" alt="placeholder">
+        <ul class = "text">
+            <li>My name is Nefertari Jones aka "Tari"</li>
+            <li>I grew up on Long Island, New York</li>
+            <li>I go to New York University!</li>
         </ul>
     </div>
 
     <div class="mySlides fade">
-        <h3 class = "text"> Player Photo </h3>
-        <img src="tari-photo.jpeg" alt="my photo">
-    </div>
-
-
-    <div class="mySlides fade">
-        <img src = "sinners-photo.jpeg" alt="placeholder">
-        <h3 class = "text"> Player Class: Coding Warrior </h3>
-        <p class = "text"> I started my KWK journey as a web-dev scholar and the next summer I came back for the mobile development
-            course. I loved KWK so much that I came back for two summers as a web dev IA. Since then, I have been
-            strengthening my coding superpowers as a Computer Science and Cinema Studies major. </p>
+        <h3 class="text">My Weakness </h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/1200px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg" alt="my photo">
     </div>
 
     <div class="mySlides fade">
-
-        <h3 class = "text"> Special Interest: Movies! </h3>
-        <p class = "text"> Hint! Click the photo to see one of Tari's favorite movies. </p>
-        <a href="https://www.proximitymedia.com/films/sinners"> <img src="sinners-photo.jpeg"
-                                                                     alt="Michael B Jordan"></a>
-
+        <img src="https://media.licdn.com/dms/image/C4E0BAQEXJRCrIzGB_A/company-logo_200_200/0/1676314796790?e=2147483647&v=beta&t=Vgnz-pUoF7xwR6IwLyiL9c-0HjngAz91Y9zC8Q51nRI" alt="placeholder">
+        <h3 class="text">KWK Journey</h3>
+        <p class="text">I started my KWK journey as a web-dev scholar and the next summer I came back for the mobile development course. I loved KWK so much that I came back for two summers as a web dev IA. Since then, I have been strengthening my coding superpowers as a Computer Science and Cinema Studies major.</p>
     </div>
 
-
+    <div class="mySlides fade">
+        <h3 class="text">Special Interest: Movies!</h3>
+        <p class="text">Hint! Click the photo to see one of Tari's favorite movies.</p>
+        <a href="https://www.proximitymedia.com/films/sinners">
+            <img src="sinners-photo.jpeg" alt="Michael B Jordan">
+        </a>
+    </div>
 </div>
-<br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
+<div class="dots-container hidden" id="dotsContainer">
+    <span class="dot active" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
 
 </div>
-</body>
-
-
-</html>
