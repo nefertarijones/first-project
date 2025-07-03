@@ -1,3 +1,4 @@
+//Adapted from the w3 schools slideshow content
 let slideIndex = 1;
 let slideshowActive = false;
 
