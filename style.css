@@ -30,6 +30,7 @@ h3{
             "CRSV" 0.5,
             "ELSH" 0,
             "ELXP" 0;
+    color:lightcoral;
 }
 
 .subtitle{
@@ -109,7 +110,7 @@ img {
 }
 
 .text {
-    color: gray;
+    color: lightblue;
     font-size:20px;
     text-align:center;
     padding: 8px 12px;
